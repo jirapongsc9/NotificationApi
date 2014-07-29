@@ -1,3 +1,3 @@
 NotificationApi
 ===============
-ReteilSoft API
+ReteilSoft API2
