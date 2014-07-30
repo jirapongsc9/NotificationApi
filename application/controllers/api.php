@@ -28,8 +28,9 @@ class Api extends CI_Controller {
 		
 		echo $num->test();
 		
-		//e
+	
 		//หฟหก
+		//e
 		$this->Notification->loadData($_POST);
 		
 		$this->Notification->openConnect();
