@@ -28,7 +28,7 @@ class Api extends CI_Controller {
 		
 		echo $num->test();
 		
-		//e
+		//eฟหก
 		
 		$this->Notification->loadData($_POST);
 		
