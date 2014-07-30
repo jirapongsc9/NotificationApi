@@ -5,12 +5,10 @@ class SendNotificationIOS extends CI_Model {
 	{
 		parent::__construct();
 	}
-	
-	
 	public function loadData($data);
 	public function openConnect();
-	public function closeConnect();
 	public function settingConnect();
-	public function result();
 	public function send();
+	public function closeConnect();
+	public function result();
 }

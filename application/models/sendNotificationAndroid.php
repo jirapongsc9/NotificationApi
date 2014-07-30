@@ -31,7 +31,6 @@ class SendNotificationAndroid extends CI_Model implements sendNotificationInterf
 		}
 	
 		$this->message = $data['data']['msg'];
-		$this->badger =$data['data']['badger_count'];
 		$this->type =$data['data']['type'];
 		
 		
@@ -39,7 +38,6 @@ class SendNotificationAndroid extends CI_Model implements sendNotificationInterf
 				'registration_ids' => $this->registrationIDs,
 				'data' => array (
 						"message" => $this->message,
-						"badger" => $this->badger ,
 						"type" => $this->type 
 				) 
 		);
@@ -53,6 +51,10 @@ class SendNotificationAndroid extends CI_Model implements sendNotificationInterf
 		$this->result = curl_exec ( $this->ch );
 	}
 	public function result() {
+		/*
+		 * token
+		 * result
+		 */
 		return $this->result;
 	}
 	public function openConnect() {
