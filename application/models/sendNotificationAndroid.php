@@ -67,7 +67,7 @@ class SendNotificationAndroid extends CI_Model implements sendNotificationInterf
 		
 		curl_close ( $this->ch );
 	}
-	public function init() {
+	public function settingConnect() {
 		// Set the URL, number of POST vars, POST data
 		curl_setopt ( $this->ch, CURLOPT_URL, $this->urlApi );
 		curl_setopt ( $this->ch, CURLOPT_POST, true );

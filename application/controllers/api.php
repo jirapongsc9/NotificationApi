@@ -17,14 +17,22 @@ class Api extends CI_Controller {
 	}
 	
 	public function sendNotification() {
+		
 		//$device =  $_POST['data']['device'];
 		$this->load->model('SendNotificationAndroid','Notification');
 		//$this->load->model('SendNotificationIOS','Notification');
 
+		$this -> load -> library("testLib");
+		
+		$num = new testLib(24);
+		
+		echo $num->test();
+		
+		/*
 		$this->Notification->loadData($_POST);
 		
 		$this->Notification->openConnect();
-		$this->Notification->init();
+		$this->Notification->settingConnect();
 		$this->Notification->send();
 		$this->Notification->closeConnect();
 		
